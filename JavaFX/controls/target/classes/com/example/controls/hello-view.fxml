@@ -19,16 +19,45 @@
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.ColorPicker?>
 <?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.control.TitledPane?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.TextField?>
 <GridPane xmlns:fx="http://javafx.com/fxml"
           fx:controller="com.example.controls.HelloController"
           vgap="10"
           hgap="10"
->
-        <Slider GridPane.rowIndex="0" GridPane.columnIndex="0" showTickLabels="true" showTickMarks="true" />
-        <Spinner min="0" max="100" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
-        <ColorPicker GridPane.rowIndex="1" />
-        <DatePicker GridPane.rowIndex="1" GridPane.columnIndex="1" />
 
+
+>
+        <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+        <Slider GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2" showTickLabels="true" showTickMarks="true" />
+        <Spinner min="0" max="100" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <ColorPicker GridPane.rowIndex="1" GridPane.columnIndex="1" />
+        <DatePicker GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <TitledPane text="Tiled Pane" GridPane.rowIndex="2" GridPane.columnIndex="1">
+            <Label text="Label in tiled pane"/>
+        </TitledPane>
+
+    <Accordion GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2">
+        <panes>
+            <TitledPane text="Tiled Pane One" GridPane.rowIndex="2" GridPane.columnIndex="1">
+                <Label text="Label in tiled pane one"/>
+            </TitledPane>
+            <TitledPane text="Tiled Pane Two" GridPane.rowIndex="2" GridPane.columnIndex="1">
+                <Label text="Label in tiled pane two"/>
+            </TitledPane>
+            <TitledPane text="Tiled Pane Three" GridPane.rowIndex="2" GridPane.columnIndex="1">
+                <Label text="Label in tiled pane three"/>
+            </TitledPane>
+        </panes>
+    </Accordion>
+
+    <TextField GridPane.rowIndex="4"  GridPane.columnIndex="0" fx:id="textToPrint" onKeyReleased="#handleKeyReleased"/>
+    <Button  GridPane.rowIndex="4"  GridPane.columnIndex="1" text="Click me" fx:id="clickMeButton" onAction="#printValueHandler"/>
 <!--    <VBox spacing="20.0" GridPane.rowIndex="1" GridPane.columnSpan="2">-->
 <!--        <padding>-->
 <!--            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>-->
