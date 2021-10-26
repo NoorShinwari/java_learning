@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.controls.HelloController"
+          vgap="10"
+          hgap="10"
+>
+        <Slider GridPane.rowIndex="0" GridPane.columnIndex="0" showTickLabels="true" showTickMarks="true" />
+        <Spinner min="0" max="100" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <ColorPicker GridPane.rowIndex="1" />
+        <DatePicker GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+<!--    <VBox spacing="20.0" GridPane.rowIndex="1" GridPane.columnSpan="2">-->
+<!--        <padding>-->
+<!--            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>-->
+<!--        </padding>-->
+<!--        <Label fx:id="welcomeText"/>-->
+<!--        <Button text="Hello!" onAction="#onHelloButtonClick"/>-->
+<!--        <fx:define>-->
+<!--            <ToggleGroup fx:id="colorToggleGroup"/>-->
+<!--        </fx:define>-->
+<!--        <RadioButton text="Red" toggleGroup="$colorToggleGroup"/>-->
+<!--        <RadioButton text="Blue" toggleGroup="$colorToggleGroup"/>-->
+<!--        <RadioButton text="Pink" toggleGroup="$colorToggleGroup"/>-->
+<!--        <CheckBox  text="Dog"/>-->
+<!--        <CheckBox text="Cat"/>-->
+<!--        <CheckBox  text="Bird"/>-->
+<!--        <fx:define>-->
+<!--            <ToggleGroup fx:id="toggleButtonGroup"/>-->
+<!--        </fx:define>-->
+<!--        <ToggleButton text="Day" toggleGroup="$toggleButtonGroup"/>-->
+<!--        <ToggleButton text="Afternoon" toggleGroup="$toggleButtonGroup"/>-->
+<!--        <ToggleButton text="Evening" toggleGroup="$toggleButtonGroup"/>-->
+<!--        <ComboBox>-->
+<!--            <items>-->
+<!--                <FXCollections fx:factory="observableArrayList">-->
+<!--                    <String fx:value="Option One"/>-->
+<!--                    <String fx:value="Option Two"/>-->
+<!--                    <String fx:value="Option Three"/>-->
+<!--                </FXCollections>-->
+<!--            </items>-->
+<!--        </ComboBox>-->
+
+<!--        <ChoiceBox>-->
+<!--            <items>-->
+<!--                <FXCollections fx:factory="observableArrayList">-->
+<!--                    <String fx:value="Choice One"/>-->
+<!--                    <String fx:value="Choice Two"/>-->
+<!--                    <String fx:value="Choice Three"/>-->
+
+<!--                </FXCollections>-->
+<!--            </items>-->
+<!--        </ChoiceBox>-->
+<!--    </VBox>-->
+</GridPane>
+
