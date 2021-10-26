@@ -44,7 +44,6 @@ public class SomeClass {
     // }
 
     public static final String owner;
-
     static {
         owner = "tim";
         System.out.println("static initialization block called");

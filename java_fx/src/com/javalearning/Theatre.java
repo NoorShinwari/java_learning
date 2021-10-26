@@ -7,7 +7,6 @@ public class Theatre {
     private List<Seat> seats = new ArrayList<>();
 
     static final Comparator<Seat> PRICE_ORDER;
-
     static {
         PRICE_ORDER = new Comparator<Seat>() {
             @Override
