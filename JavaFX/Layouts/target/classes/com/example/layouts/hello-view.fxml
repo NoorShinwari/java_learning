@@ -106,7 +106,6 @@
     <Button text="Button Two" StackPane.alignment="CENTER"/>
     <Button text="Button Three" StackPane.alignment="CENTER_LEFT"/>
     <Button text="Button Four" StackPane.alignment="CENTER_RIGHT"/>
-    <Button text="Button Five" StackPane.alignment="BOTTOM_CENTER" />
     <Button text="Button Six" StackPane.alignment="BOTTOM_CENTER"/>
     <Button text="Button Seven" StackPane.alignment="BOTTOM_LEFT"/>
     <Button text="Button Eight" StackPane.alignment="TOP_CENTER"/>
