@@ -1340,9 +1340,9 @@ public class MainBasics {
                     System.out.print("*"); // diagonal down to right
                 else if (col == number - 1 - row)
                     System.out.print("*"); // diagonal down to left
-                // alternative to lines 7-11 // if(row==0 || row==number-1 || column==0 ||
-                // column==number-1 || column==row || column==number-1-row)
-                // System.out.print("*");
+                    // alternative to lines 7-11 // if(row==0 || row==number-1 || column==0 ||
+                    // column==number-1 || column==row || column==number-1-row)
+                    // System.out.print("*");
                 else
                     System.out.print(" "); // empty space between numbers
             }

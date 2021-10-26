@@ -3,7 +3,7 @@ package com.javaLearning;
 public class BankAccount {
 
     public BankAccount(int accountNumber, long balance, String firstName, String lastName, String email,
-            String phoneNumber) {
+                       String phoneNumber) {
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.firstName = firstName;
