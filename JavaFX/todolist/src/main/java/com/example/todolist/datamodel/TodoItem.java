@@ -3,14 +3,15 @@ package com.example.todolist.datamodel;
 import java.time.LocalDate;
 
 public class TodoItem {
-    private String shortDescription;
-     private String details;
-     private LocalDate deadline;
 
-    public  TodoItem(String shortDescription, String details, LocalDate deadline){
-        this.shortDescription= shortDescription;
-        this.details= details;
-        this.deadline= deadline;
+    private String shortDescription;
+    private String details;
+    private LocalDate deadline;
+
+    public TodoItem(String shortDescription, String details, LocalDate deadline) {
+        this.shortDescription = shortDescription;
+        this.details = details;
+        this.deadline = deadline;
     }
 
     public String getShortDescription() {
@@ -36,7 +37,6 @@ public class TodoItem {
     public void setDeadline(LocalDate deadline) {
         this.deadline = deadline;
     }
-
 
     @Override
     public String toString() {
