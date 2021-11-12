@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10" prefWidth="318.0" stylesheets="@styles.css" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.2" fx:controller="com.example.javafx_application.HelloController">
+    <Button prefHeight="26.0" prefWidth="209.0" styleClass="customButton" text="One" GridPane.columnIndex="0"  GridPane.rowIndex="0" />
+    <Button text="Two" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <Button text="Three" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+    <Button text="Four" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+    <Button text="Five" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+
+
+</GridPane>
