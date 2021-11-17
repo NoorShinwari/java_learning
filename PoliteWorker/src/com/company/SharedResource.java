@@ -11,6 +11,8 @@ public class SharedResource {
         return owner;
     }
     public synchronized void setOwner(Worker owner) {
+        System.out.println("Old owner :: " + this.owner.getName());
         this.owner = owner;
+        System.out.println("New owner :: " + owner.getName());
     }
 }
