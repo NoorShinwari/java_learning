@@ -45,7 +45,7 @@ public class Main {
                         results.getString(COLUMN_EMAIL)
                 );
             }
-            
+
             results.close();
 
 
